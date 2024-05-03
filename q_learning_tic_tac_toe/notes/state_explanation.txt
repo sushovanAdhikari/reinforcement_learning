@@ -1,0 +1,20 @@
+Q ->For the 2*3 for the movement-matrix a state represent a specific location, why in the case of tic-tac-toe, state represent the configuration of the whole board?
+
+Ans->The difference in what a "state" represents in these two scenarios comes down to the nature of the games themselves. In the 2x3 grid scenario, 
+    the game is essentially about navigating through different locations on the grid. Therefore, a "state" in this context naturally corresponds to a location on the grid.
+    On the other hand, Tic-Tac-Toe is a game about achieving a certain configuration of marks on the board (three in a row). 
+    The important aspect of the game isn't where the 'X' or 'O' is on the board, but rather the arrangement of 'X's and 'O's relative to each other. 
+    Therefore, a "state" in this context corresponds to a configuration of the whole board.
+    In other words, the definition of a "state" depends on what information is relevant to the game. 
+    For a navigation task, the relevant information is the agent's location, so that's what we use to define a state. 
+    For a game like Tic-Tac-Toe, the relevant information is the arrangement of 'X's and 'O's, so that's what we use to define a state
+
+Q -> In Tic-Tac-Toe, the game is played on a 3x3 grid, and players take turns placing their mark (‘X’ or ‘O’) in an empty cell. 
+     The objective of the game is to be the first to get three of their own marks in a row, either horizontally, vertically, or diagonally.
+     Because the objective of the game involves the arrangement of 'X’s and 'O’s, 
+     the state of the game at any given moment is defined by the positions of 'X’s and 'O’s on the board. 
+     Each unique arrangement of 'X’s, 'O’s, and empty spaces on the board is considered a different state.
+     For example, an empty board is one state, a board with one ‘X’ in the middle is another state, 
+     a board with one ‘X’ in the middle and one ‘O’ in the top left corner is another state, and so on.
+     When we use reinforcement learning to train an agent (a computer program) to play Tic-Tac-Toe, 
+     the agent learns a policy that tells it what action (where to place its mark) is best in each state (for each possible arrangement of 'X’s and 'O’s on the board).

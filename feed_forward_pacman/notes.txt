@@ -1,0 +1,4 @@
+48 Input states,
+48 Target values,
+
+print out game board/states on every step of navigation.
